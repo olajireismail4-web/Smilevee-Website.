@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smilevee Digital - Creative design, branding, web development and digital solutions for growing businesses.">
+  <title>Smilevee Digital | Creative Digital Agency</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b14;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #080b14;
+      border-bottom: 1px solid #20283b;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      color: #d9ae52;
+    }
+
+    .logo span {
+      color: #ffffff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #d9ae52;
+    }
+
+    .hero {
+      padding: 110px 8%;
+      background: linear-gradient(120deg, #080b14, #101d49);
+      text-align: center;
+    }
+
+    .hero small {
+      color: #d9ae52;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 65px);
+      line-height: 1.15;
+      margin: 22px 0;
+    }
+
+    .hero h1 span {
+      color: #d9ae52;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #c3c8d5;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #d9ae52;
+      color: #080b14;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #aeb6c9;
+    }
+
+    .services {
+      background: #0d1220;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #151d30;
+      border: 1px solid #293653;
+      padding: 28px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: #d9ae52;
+    }
+
+    .service-card h3 {
+      color: #d9ae52;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #b8c0d0;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .about p {
+      color: #c3c8d5;
+      margin-top: 15px;
+    }
+
+    .contact {
+      background: #101d49;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #d1d7e5;
+      margin-top: 10px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #05070d;
+      color: #aeb6c9;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 80px 6%;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">SMILEVEE<span> DIGITAL</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <small>WELCOME TO SMILEVEE DIGITAL</small>
+
+    <h1>
+      Creativity Meets <span>Technology.</span>
+    </h1>
+
+    <p>
+      We help businesses build a strong digital presence
+      through creative designs, professional branding,
+      modern websites and innovative digital solutions.
+    </p>
+
+    <a href="#services" class="btn">Explore Our Services</a>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <div class="section-title">
+        <h2>About Smilevee Digital</h2>
+        <p>Creative ideas. Powerful digital experiences.</p>
+      </div>
+
+      <p>
+        Smilevee Digital is a creative digital agency focused
+        on helping individuals, entrepreneurs and businesses
+        grow through technology and creativity.
+      </p>
+
+      <p>
+        Our mission is to turn ideas into meaningful digital
+        experiences that help brands stand out and succeed.
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Creative solutions to move your business forward.</p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>
+          Professional flyers, social media graphics,
+          posters and visual designs for your brand.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Website Development</h3>
+        <p>
+          Modern, responsive and professional websites
+          designed to grow your business online.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Branding</h3>
+        <p>
+          Build a memorable brand identity with
+          creative logos, colours and brand materials.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Digital Content</h3>
+        <p>
+          Engaging digital content and social media
+          creatives that help businesses attract attention.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's Build Something Great</h2>
+
+    <p>
+      Have a project or business idea?
+      Let's discuss how we can help you.
+    </p>
+
+    <a href="mailto:YOUR_EMAIL_HERE" class="btn">
+      Contact Our Team
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> Smilevee Digital.
+      All Rights Reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smilevee Digital - Creative design, branding, web development and digital solutions for growing businesses.">
+  <title>Smilevee Digital | Creative Digital Agency</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b14;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #080b14;
+      border-bottom: 1px solid #20283b;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      color: #d9ae52;
+    }
+
+    .logo span {
+      color: #ffffff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #d9ae52;
+    }
+
+    .hero {
+      padding: 110px 8%;
+      background: linear-gradient(120deg, #080b14, #101d49);
+      text-align: center;
+    }
+
+    .hero small {
+      color: #d9ae52;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 65px);
+      line-height: 1.15;
+      margin: 22px 0;
+    }
+
+    .hero h1 span {
+      color: #d9ae52;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #c3c8d5;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #d9ae52;
+      color: #080b14;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #aeb6c9;
+    }
+
+    .services {
+      background: #0d1220;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #151d30;
+      border: 1px solid #293653;
+      padding: 28px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: #d9ae52;
+    }
+
+    .service-card h3 {
+      color: #d9ae52;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #b8c0d0;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .about p {
+      color: #c3c8d5;
+      margin-top: 15px;
+    }
+
+    .contact {
+      background: #101d49;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #d1d7e5;
+      margin-top: 10px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #05070d;
+      color: #aeb6c9;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 80px 6%;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">SMILEVEE<span> DIGITAL</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <small>WELCOME TO SMILEVEE DIGITAL</small>
+
+    <h1>
+      Creativity Meets <span>Technology.</span>
+    </h1>
+
+    <p>
+      We help businesses build a strong digital presence
+      through creative designs, professional branding,
+      modern websites and innovative digital solutions.
+    </p>
+
+    <a href="#services" class="btn">Explore Our Services</a>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <div class="section-title">
+        <h2>About Smilevee Digital</h2>
+        <p>Creative ideas. Powerful digital experiences.</p>
+      </div>
+
+      <p>
+        Smilevee Digital is a creative digital agency focused
+        on helping individuals, entrepreneurs and businesses
+        grow through technology and creativity.
+      </p>
+
+      <p>
+        Our mission is to turn ideas into meaningful digital
+        experiences that help brands stand out and succeed.
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Creative solutions to move your business forward.</p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>
+          Professional flyers, social media graphics,
+          posters and visual designs for your brand.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Website Development</h3>
+        <p>
+          Modern, responsive and professional websites
+          designed to grow your business online.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Branding</h3>
+        <p>
+          Build a memorable brand identity with
+          creative logos, colours and brand materials.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Digital Content</h3>
+        <p>
+          Engaging digital content and social media
+          creatives that help businesses attract attention.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's Build Something Great</h2>
+
+    <p>
+      Have a project or business idea?
+      Let's discuss how we can help you.
+    </p>
+
+    <a href="mailto:YOUR_EMAIL_HERE" class="btn">
+      Contact Our Team
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> Smilevee Digital.
+      All Rights Reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>   
+</html>
